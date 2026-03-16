@@ -14,7 +14,7 @@ export default function OutfitCard({ outfit, isWishlisted, onToggleWishlist }: O
         <img
           src={outfit.image_url}
           alt={outfit.title}
-          className="w-full h-[400px] object-cover transition-transform duration-500 group-hover:scale-105"
+          className="w-full aspect-[3/4] object-cover object-top transition-transform duration-500 group-hover:scale-105"
         />
         <div className="absolute top-4 left-4 flex gap-2">
           <span className="bg-white/90 backdrop-blur-sm px-4 py-1.5 rounded-full text-xs font-bold text-gray-900 shadow-sm uppercase tracking-wider">
