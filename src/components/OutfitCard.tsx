@@ -10,11 +10,11 @@ interface OutfitCardProps {
 export default function OutfitCard({ outfit, isWishlisted, onToggleWishlist }: OutfitCardProps) {
   return (
     <div className="bg-white rounded-[2rem] overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 group border border-gray-100">
-      <div className="relative overflow-hidden">
+      <div className="relative overflow-hidden bg-white h-[550px] flex items-center justify-center">
         <img
           src={outfit.image_url}
           alt={outfit.title}
-          className="w-full aspect-[3/4] object-cover object-top transition-transform duration-500 group-hover:scale-105"
+          className="w-full h-full object-contain transition-transform duration-500 group-hover:scale-105"
         />
         <div className="absolute top-4 left-4 flex gap-2">
           <span className="bg-white/90 backdrop-blur-sm px-4 py-1.5 rounded-full text-xs font-bold text-gray-900 shadow-sm uppercase tracking-wider">
